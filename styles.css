@@ -1,0 +1,12 @@
+body {
+  font-family: 'Calibri';
+  font-size: 16px;
+  margin: 50px;
+  text-align: center;
+}
+
+input {
+  font-family: 'Calibri';  
+  font-size: 16px;
+  padding: 5px;
+}
