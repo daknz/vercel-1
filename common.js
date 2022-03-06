@@ -13,7 +13,8 @@ function displayRadioValue() {
         // let score = document.getElementById("score").innerHTML
         // document.getElementById("score").innerHTML = score + el[i].value;
         // document.getElementById("s1a").value = el[i].value;
-        document.getElementsByClassName('score-active')[0].value = el[i].value;
+        // document.getElementsByClassName('score-active')[0].value = el[i].value;
+        document.getElementsByClassName('score-active')[0].innerHTML = el[i].value;
         el[i].checked = false;
         }
     }
@@ -39,6 +40,7 @@ function displayRadioValue() {
         document.getElementById('s3b').classList.add('score-active');
     }
     else if(document.getElementsByClassName('score-active')[0].id === 's3b') {
+        document.getElementById('s3b').classList.remove('score-active');
         console.log('done');
     }
 }

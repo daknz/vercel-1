@@ -27,80 +27,87 @@
     
 
     <!-- <p id="score"></p> -->
-    <input type="text" class="score score-active" id="s1a" disabled>-
+    <!-- <input type="text" class="score score-active" id="s1a" disabled>-
     <input type="text" class="score" id="s1b" disabled>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;
     <input type="text" class="score" id="s2a" disabled>-
     <input type="text" class="score" id="s2b" disabled>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;
     <input type="text" class="score" id="s3a" disabled>-
     <input type="text" class="score" id="s3b" disabled>
-    &nbsp;
+    &nbsp; -->
+
+    <span class="score">
+      <span class="score score-active" id="s1a"></span> - <span class="score" id="s1b"></span>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span class="score" id="s2a"></span> - <span class="score" id="s2b"></span>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span class="score" id="s3a"></span> - <span class="score" id="s3b"></span>
+      &nbsp;
+      </span>
+      
+      
+      <div id="radios-score" class="radio-toolbar">
+  
+        <!-- ** change these three to actual buttons and text -->
+        <!-- <input type="radio" id="radioScoreA10" name="scoreA" value="10">
+        <label for="radioScoreA10">&#171;</label>
+  
+        <input type="radio" id="radioScoreA10" name="scoreA" value="10">
+        <label for="radioScoreA10">1st Set</label>
+        
+        <input type="radio" id="radioScoreA10" name="scoreA" value="10">
+        <label for="radioScoreA10">&#187;</label> -->
+  
+        <!-- <br> -->
+        <br>
+  
+        <input type="radio" id="radioScoreAMore" name="scoreA" value="More">
+        <label for="radioScoreAMore">>10</label>
+        
+        <input type="radio" id="radioScoreA10" name="scoreA" value="10">
+        <label for="radioScoreA10">10</label>
+        
+        <input type="radio" id="radioScoreA9" name="scoreA" value="9">
+        <label for="radioScoreA9">9</label>  
+  
+        <br>
+        
+        <input type="radio" id="radioScoreA8" name="scoreA" value="8">
+        <label for="radioScoreA8">8</label>
     
-    <div id="radios-score" class="radio-toolbar">
-
-      <!-- ** change these three to actual buttons and text -->
-      <input type="radio" id="radioScoreA10" name="scoreA" value="10">
-      <label for="radioScoreA10">&#171;</label>
-
-      <input type="radio" id="radioScoreA10" name="scoreA" value="10">
-      <label for="radioScoreA10">1st Set</label>
-      
-      <input type="radio" id="radioScoreA10" name="scoreA" value="10">
-      <label for="radioScoreA10">&#187;</label>
-
-      <br>
-      <br>
-
-      <input type="radio" id="radioScoreAMore" name="scoreA" value="More">
-      <label for="radioScoreAMore">>10</label>
-      
-      <input type="radio" id="radioScoreA10" name="scoreA" value="10">
-      <label for="radioScoreA10">10</label>
-      
-      <input type="radio" id="radioScoreA9" name="scoreA" value="9">
-      <label for="radioScoreA9">9</label>  
-
-      <br>
-      
-      <input type="radio" id="radioScoreA8" name="scoreA" value="8">
-      <label for="radioScoreA8">8</label>
+        <input type="radio" id="radioScoreA7" name="scoreA" value="7">
+        <label for="radioScoreA7">7</label>
+        
+        <input type="radio" id="radioScoreA6" name="scoreA" value="6">
+        <label for="radioScoreA6">6</label>  
+        
+        <br>
+        
+        <input type="radio" id="radioScoreA5" name="scoreA" value="5">
+        <label for="radioScoreA5">5</label>
+        
+        <input type="radio" id="radioScoreA4" name="scoreA" value="4">
+        <label for="radioScoreA4">4</label>
+        
+        <input type="radio" id="radioScoreA3" name="scoreA" value="3">
+        <label for="radioScoreA3">3</label>  
+        
+        <br>
+        
+        <input type="radio" id="radioScoreA2" name="scoreA" value="2">
+        <label for="radioScoreA2">2</label>
+    
+        <input type="radio" id="radioScoreA1" name="scoreA" value="1">
+        <label for="radioScoreA1">1</label>
+    
+        <input type="radio" id="radioScoreA0" name="scoreA" value="0">
+        <label for="radioScoreA0">0</label>
+    
+        <!-- <input type="text" name="scoreA" class="radio-alternative"> -->
+    
+      </div>
   
-      <input type="radio" id="radioScoreA7" name="scoreA" value="7">
-      <label for="radioScoreA7">7</label>
-      
-      <input type="radio" id="radioScoreA6" name="scoreA" value="6">
-      <label for="radioScoreA6">6</label>  
-      
-      <br>
-      
-      <input type="radio" id="radioScoreA5" name="scoreA" value="5">
-      <label for="radioScoreA5">5</label>
-      
-      <input type="radio" id="radioScoreA4" name="scoreA" value="4">
-      <label for="radioScoreA4">4</label>
-      
-      <input type="radio" id="radioScoreA3" name="scoreA" value="3">
-      <label for="radioScoreA3">3</label>  
-      
-      <br>
-      
-      <input type="radio" id="radioScoreA2" name="scoreA" value="2">
-      <label for="radioScoreA2">2</label>
-  
-      <input type="radio" id="radioScoreA1" name="scoreA" value="1">
-      <label for="radioScoreA1">1</label>
-  
-      <input type="radio" id="radioScoreA0" name="scoreA" value="0">
-      <label for="radioScoreA0">0</label>
-  
-      <!-- <input type="text" name="scoreA" class="radio-alternative"> -->
-  
-    </div>
-
-    <input type="text">
-
-
 
     <script src="common.js"></script>
   </body>
