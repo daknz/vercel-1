@@ -8,14 +8,38 @@ function displayRadioValue() {
     var el = document.getElementsByName('scoreA');
       
     for(i = 0; i < el.length; i++) {
-        console.log(el[i].id, el[i].checked, el[i].value);
         if(el[i].checked) {
         // document.getElementById("result").innerHTML = "Gender: "+ele[i].value;
-        console.log(el[i].value);
         // let score = document.getElementById("score").innerHTML
         // document.getElementById("score").innerHTML = score + el[i].value;
-        document.getElementById("s1a").value = el[i].value;
+        // document.getElementById("s1a").value = el[i].value;
+        document.getElementsByClassName('score-active')[0].value = el[i].value;
+        el[i].checked = false;
         }
+    }
+
+    if(document.getElementsByClassName('score-active')[0].id === 's1a') {
+        document.getElementById('s1a').classList.remove('score-active');
+        document.getElementById('s1b').classList.add('score-active');
+    }
+    else if(document.getElementsByClassName('score-active')[0].id === 's1b') {
+        document.getElementById('s1b').classList.remove('score-active');
+        document.getElementById('s2a').classList.add('score-active');
+    }
+    else if(document.getElementsByClassName('score-active')[0].id === 's2a') {
+        document.getElementById('s2a').classList.remove('score-active');
+        document.getElementById('s2b').classList.add('score-active');
+    }
+    else if(document.getElementsByClassName('score-active')[0].id === 's2b') {
+        document.getElementById('s2b').classList.remove('score-active');
+        document.getElementById('s3a').classList.add('score-active');
+    }
+    else if(document.getElementsByClassName('score-active')[0].id === 's3a') {
+        document.getElementById('s3a').classList.remove('score-active');
+        document.getElementById('s3b').classList.add('score-active');
+    }
+    else if(document.getElementsByClassName('score-active')[0].id === 's3b') {
+        console.log('done');
     }
 }
 

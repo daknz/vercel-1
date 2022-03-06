@@ -54,7 +54,7 @@ input {
 }
 
 .radio-toolbar label:hover {
-  background-color: #dfd;
+  /* background-color: #dfd; */
 }
 
 
@@ -75,7 +75,13 @@ input {
   width: 40px;
 }
 
-.score{
+.score {
   width: 30px;
   text-align: center;
+  font-weight: bold;
+  /* border: none; */
+}
+
+.score-active {
+  border: solid 1px lightpink;
 }
